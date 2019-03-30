@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+onerror = unhandled;
+function unhandled(msg,url,line){
+alert (" unhandled err");
+}
+
+function add()
+{
+alert( "jia");
+	alert ($("#int1").val() + $("#int2").val());
+}
+
+function divide()
+{
+	
+	if( isNAN($("#int1").val()) || isNAN$("#int2").val()){
+	alert ( "anyone not num");
+	}
+	alert ($("#int1").val() /
+	$("#int2").val());
+
+}
+</script>
+</head>
+<body>
+
+Input 1 : <input type="text" id="int1" /><br>
+Input 2 : <input type="text" id="int2" /><br>
+
+<input type="button" name="add" value="Add" onclick()="add();" />
+<input type="button" name="divide" value="Divide"  onclick()="divide();"/>
+
+</body>
+
+</html>
